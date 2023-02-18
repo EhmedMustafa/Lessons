@@ -12,29 +12,29 @@ namespace ConsoleApp1
         {
             #region task-1
             //Homework 1: İstifadəçi mənfi dəyər daxil edənə qədər, daxil etdiyi bütün müsbət rəqəmləri toplayıb axırda nəticəni ekrana yazın.
-            int reqem;
-            int a = 0;
-            Console.WriteLine("Zehmet olmasa reqem daxil edin:");
-            while (true)
-            {
-                reqem = int.Parse(Console.ReadLine());
-                a += reqem; ;
-                if (reqem < 0)
-                {
-                    Console.WriteLine(a); break;
-                }
-            }
+            //int reqem;
+            //int a = 0;
+            //Console.WriteLine("Zehmet olmasa reqem daxil edin:");
+            //while (true)
+            //{
+            //    reqem = int.Parse(Console.ReadLine());
+            //    a += reqem; ;
+            //    if (reqem < 0)
+            //    {
+            //        Console.WriteLine(a); break;
+            //    }
+            //}
             #endregion
 
             #region task-4
             //Homework 4: İstifadəçidən bir rəqəm alın. While döngüsüylə istifadəçinin daxil etdiyi rəqəmdən 0-a doğru geriyə sayın.
-            int reqem1;
-            reqem1= Convert.ToInt32(Console.ReadLine());
-            while (reqem1>= 0)
-            {
-                Console.WriteLine(reqem1);
-                reqem--;
-            }
+            //int reqem1;
+            //reqem1= Convert.ToInt32(Console.ReadLine());
+            //while (reqem1>= 0)
+            //{
+            //    Console.WriteLine(reqem1);
+            //    reqem--;
+            //}
             #endregion
 
             #region task-3
@@ -46,19 +46,26 @@ namespace ConsoleApp1
 
             Console.WriteLine("Texmin oyunu ucun en yuksek deyeri daxil edin: ");
             int say = Convert.ToInt32(Console.ReadLine());
+
+            int cehd = 1;
+            cehd++;
+            Console.WriteLine(cehd + " Cehdiniz! Zehmet olmasa reqemi texmin edin: ");
+            int j = Convert.ToInt32(Console.ReadLine());
+            Random rand = new Random();
+            int b = rand.Next(1, say);
+            Console.WriteLine(b);
+
+
             while (true)
             {
 
-
-                Console.WriteLine("Cehdiniz! Zehmet olmasa reqemi texmin edin: ");
-                int j = Convert.ToInt32(Console.ReadLine());
-                Random rand = new Random();
-                int b = rand.Next(1, say);
-                Console.WriteLine(b);
-
+                
+                
                 if (j == b)
                 {
-                    Console.WriteLine("Cehdinizde düzgün reqemi tapdınız!"); break;
+                    
+                    Console.Write("Cehdinizde düzgün reqemi tapdınız!"); break;
+                    
                 }
                 #endregion
             }
